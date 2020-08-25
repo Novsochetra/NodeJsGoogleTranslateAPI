@@ -22,6 +22,5 @@ acceptable params:
 
 #### Production URL
 
-------------
 
 https://node-google-translate-api.herokuapp.com/api/translates?q=other&from=en&to=km
