@@ -7,7 +7,7 @@
     "test": "jest",
     "tsc": "ts-node ./module/**",
     "build": "tsc --project ./",
-    "server": "nodemon server.ts",
+    "start": "node ./build/server.js",
     "user": "npm run build && node ./build/module/user/index.js"
   },
   "keywords": [
