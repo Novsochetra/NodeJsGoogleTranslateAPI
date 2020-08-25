@@ -22,6 +22,12 @@ mainApp.use(function (req: Request, res: Response): any {
   return render404Page(req, res);
 });
 
+app.listen(config.PORT, (_req: Request, _res: Response): void => {
+  console.log(
+    `Example app listening at http://${config.HOST_NAME}:${config.PORT}`
+  );
+});
+
 const render404Page = (req: Request, res: Response): any => {
   return res.format({
     html: function () {

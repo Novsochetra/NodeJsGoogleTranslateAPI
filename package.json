@@ -5,9 +5,10 @@
   "main": "server.ts",
   "scripts": {
     "test": "jest",
+    "postinstall": "yarn build",
     "tsc": "ts-node ./module/**",
-    "build": "tsc --project ./",
-    "start": "node ./build/server.js",
+    "build": "tsc --project ./ && cp -rf src/views build/src",
+    "start": "cd ./build/src && node server.js",
     "user": "npm run build && node ./build/module/user/index.js"
   },
   "keywords": [
