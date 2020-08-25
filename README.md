@@ -14,7 +14,7 @@ It a free service api for google translate that has unlimited request.
 http://localhost:3000/api/translates?q=hello&from=en&to=km
 `
 
-acceptable params:
+Acceptable params:
 
 **q** is for word search
 **from** is the first language
