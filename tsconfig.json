@@ -7,6 +7,5 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["./src"],
-  "exclude": ["./__test__"]
+  "include": ["./src"]
 }

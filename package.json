@@ -7,7 +7,7 @@
     "test": "jest",
     "postinstall": "yarn build",
     "tsc": "ts-node ./module/**",
-    "build": "tsc --project ./ && cp -rf src/views build/src",
+    "build": "rm -rf build/src/* && tsc --project ./ && cp -rf src/views build/src",
     "start": "cd ./build/src && node server.js",
     "user": "npm run build && node ./build/module/user/index.js"
   },
